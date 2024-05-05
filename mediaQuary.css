@@ -134,9 +134,8 @@
         text-align: justify;
         padding: 1rem;
     }
-}
-@media screen and (max-width: 600px) {
     #about{
         height:150vh;
     }
 }
+
