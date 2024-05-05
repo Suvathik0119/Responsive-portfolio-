@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuary.css">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- destop nav menu -->
+    <nav id="destop-nav">
+
+        <div class="logo">Suvathik0119</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contect">CONTECT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- hidden nav menu -->
+    <nav id="hidden-nav">
+        <div class="logo">Suvathik0119</div>
+        <div class="hidden-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contect">CONTECT ME</a></li>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <!-- home section -->
+    <section id="home">
+        <div class="section_pic-container">
+            <img src="./assets/profile.jpg" alt="Suvathik0119 profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="tittle">Sasikaranathan Suvathik</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1"
+                    onclick="window.open('./assets/Sasikaranathan Suvathik cv.pdf')">DOWNLOAD CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./#contect')">CONTECT INFO</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/icons8-linkedin-circled.svg" alt="My-linkedin-profile"
+                    onclick="location.href='https://www.linkedin.com/in/sasikaranathan-suvathik-1273382a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
+                    class="icon">
+                <img src="./assets/icons8-github (1).svg" alt="My-github-profile"
+                    onclick="location.href='https://github.com/Suvathik0119'" class="icon">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- about section -->
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <p class="tittle">About Me</p>
+        <div id="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/profile.jpg" alt="prifile-pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    
+                    <div class="details-containers">
+                        <img src="./assets/experience.png" alt="experience-icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ years <br>Frontend Development</p>
+                    </div>
+
+                    <div class="details-containers">
+                        <img src="./assets/education.png" alt="education-icon" class="icon">
+                        <h3>Education</h3>
+                        <p>HNDIT <br>CAA level 03</p>
+                    </div>
+
+                </div>
+                <div class="text-container">
+                    <p>
+                        Am live in Akkaraippattu ⛺️. Am following Higher National Diploma 👨‍🎓 in IT at Hardy Advance
+                        technical institute (SLIATE)🏛.
+
+                        🚀I have spent the last one year honing my skills in HTML, CSS and JavaScript to build the parts
+                        of websites🌐.
+                        <br><br>
+                        📍My short tearm goal is success fully finished my 👨‍💻 Intern programs. My long tearm goal is
+                        being a best 👨‍💼 full-stack web developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow-icon" class="arrow icon" onclick="location.href='#resume'">
+    </section>
+
+
+    <!-- Resume section -->
+    <section id="resume">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="tittle">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-tittle">Frontend Developer</h2>
+                    <div class="artical-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h4>HTML</h4>
+                                <P>Experience</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h4>CSS</h4>
+                                <P>Experience</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h4>JavaScript</h4>
+                                <P>Experience</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h4>UI / UX</h4>
+                                <P>Experience</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-containers">
+                    <h2 class="experience-sub-tittle">Backend Developer</h2>
+                    <div class="artical-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h4>SQL</h4>
+                                <P>Experience</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h4>PHP</h4>
+                                <P>Experience</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow-icon" class="arrow icon" onclick="location.href='#projects'">
+    </section>
+
+
+    <!-- project section -->
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="tittle">Projects</h1>
+        <!-- project no 01 -->
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers project-container">
+                    <div class="artical-container">
+                        <img src="./assets/blog web site.png" alt="project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-tittle project-tittle">Blog website</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Suvathik0119/Event-planing-websit'">Github</button>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://tiny-cassata-323637.netlify.app/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- project no 02 -->
+                <div class="details-containers project-container">
+                    <div class="artical-container">
+                        <img src="./assets/porttfolio.png" alt="project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-tittle project-tittle">Porfolio website</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Suvathik0119/PRODIGY_WD_04'">Github</button>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://stupendous-babka-71b4f4.netlify.app/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- project no 03 -->
+                <div class="details-containers project-container">
+                    <div class="artical-container">
+                        <img src="./assets/chid website.png" alt="project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-tittle project-tittle">Child Tracker</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='mailto:k4suvathik@gmail.com'">Github</button>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='mailto:k4suvathik@gmail.com'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow-icon" class="arrow icon" onclick="location.href='#contect'">
+    </section>
+
+
+
+    <!-- contect section -->
+    <section id="contect">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="tittle">Contect Me</h1>
+
+
+        <div class="contect-info-upper-container">
+            <div class="contect-info-container">
+                <img src="./assets/icons8-linkedin-circled.svg" alt="linkedin icon" class="icon contect-icon">
+                <p><a
+                        href="https://www.linkedin.com/in/sasikaranathan-suvathik-1273382a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                </p>
+            </div>
+            <div class="contect-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contect-icon">
+                <p><a href="mailto:k4suvathik@gmail.com">k4suvathik@gmail.com</a></p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contect">CONTECT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright&#169; 2024 Suvathik0119. All Rights Reseved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

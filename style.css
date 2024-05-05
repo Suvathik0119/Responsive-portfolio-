@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #6200EE;
+    --primary-cover-color: #3700B3;
+    --secondary-color: #018786;
+    --secondary-cover-color: #03DAC6;
+    --background-color: #FFF;
+    --text-color: rgb(85, 85, 85);
+    --btn-text-color: #000;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: var(--text-color);
+}
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* destop nav */
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+a:hover {
+    color: var(--secondary-cover-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 550;
+    color: var(--primary-color);
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* hidden menu */
+#hidden-nav {
+    display: none;
+}
+
+.hidden-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--background-color);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.menu-icon .open span:first-child {
+    transform: rotate(45deg)translate(10px, 5px);
+}
+
+.menu-icon .open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon .open span:last-child {
+    transform: rotate(-45deg)translate(10px, -5px);
+}
+
+.menu-icon .open span:first-child {
+    transform: none;
+}
+
+.menu-icon .open span:first-child {
+    opacity: 1;
+}
+
+.menu-icon .open span:first-child {
+    transform: none;
+}
+
+/* sections */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+#section-container {
+    display: flex;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 90vh;
+}
+
+.section_pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 600;
+}
+
+.section_text_p1 {
+    text-align: center;
+}
+
+.section_text_p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.tittle {
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icons */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* button */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 9rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: 0.1rem solid var(--btn-text-color);
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background-color: var(--btn-text-color);
+    color: var(--background-color);
+}
+
+
+/* About */
+#about{
+    height: 130vh;
+}
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+}
+
+.details-containers {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: var(--background-color);
+    border-radius: 2rem;
+    border: 0.1rem solid var(--secondary-cover-color);
+}
+
+#section-container {
+    gap: 4rem;
+    height: 66%;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* Experience  */
+
+#resume {
+    position: relative;
+}
+
+.experience-sub-tittle {
+    color: var(--secondary-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.artical-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+
+/* project */
+
+#projects {
+    position: relative;
+}
+
+.project-img {
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
+}
+
+.project-tittle {
+    margin: 1rem;
+    color: var(--btn-text-color);
+}
+
+.project-btn {
+    color: var(--btn-text-color);
+    border: 0.1rem solid var(--btn-text-color);
+}
+
+.project-container {
+    margin-bottom: 2rem;
+}
+
+/* contect */
+
+#contect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+}
+
+.contect-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--secondary-cover-color);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contect-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contect-icon {
+    cursor: default;
+    height: 2.5rem;
+}
+
+/* footer */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    opacity: 50%;
+}
